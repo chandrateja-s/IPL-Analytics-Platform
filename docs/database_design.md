@@ -149,6 +149,3 @@ The following primary keys uniquely identify each entity within the database.
 | Matches | MatchID | Natural | Existing unique match identifier provided by the source dataset. |
 | Deliveries | DeliveryID | Surrogate | Generated integer key because no single unique delivery identifier exists in the source dataset. |
 
-> ###Notes about Type of primary Key:###
-- **Natural**   :- Available from source data
-- **Surrogate** :- Either *generated* entirely new using script or a derived *composite primary key*
