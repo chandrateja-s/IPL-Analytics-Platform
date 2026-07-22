@@ -135,3 +135,16 @@ This document describes the database design by identifying the entities and impl
 | BattingPartners | batting_partners | Partnership runs. |
 | BatterOut | Batter_out | Indicates if Batter was dismissed. |
 | NextBatterID | next_batter | References Players table. |
+
+## Primary Keys
+
+The following primary keys uniquely identify each entity within the database.
+
+| Entity | Primary Key | Type | Reason |
+|---------|-------------|------|--------|
+| Seasons | SeasonID | Surrogate | Generated integer key for efficient joins and referential integrity. |
+| Teams | TeamID | Surrogate | Generated integer key to uniquely identify each franchise. |
+| Players | PlayerID | Surrogate | Generated integer key because player names are not reliable unique identifiers. |
+| Venues | VenueID | Surrogate | Generated integer key to uniquely identify venues. |
+| Matches | MatchID | Natural | Existing unique match identifier provided by the source dataset. |
+| Deliveries | DeliveryID | Surrogate | Generated integer key because no single unique delivery identifier exists in the source dataset. |
