@@ -1,0 +1,17 @@
+# Ignore raw datasets
+data/raw/
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# SQL Server
+*.ldf
+*.mdf
+
+# Windows
+Thumbs.db
+.DS_Store
