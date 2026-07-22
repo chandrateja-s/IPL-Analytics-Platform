@@ -17,21 +17,29 @@ An IPL Analytics Platform built using SQL Server, Python, Power BI, and Git.
 - Git
 - GitHub
 
-## Folder Structure
+## Project Structure
 
 ```
-IPL-Analytics-Platform
+IPL Analytics Platform
 │
-├── app
-├── data
-│   ├── raw
-│   └── processed
-├── database
-├── docs
-├── screenshots
-└── README.md
+├── app/                 # Python source code
+├── data/
+│   ├── raw/             # Original datasets
+│   └── processed/       # Cleaned datasets
+├── database/
+│   ├── schema/          # Database schema
+│   ├── scripts/         # SQL queries
+│   └── backups/         # Database backups
+├── docs/                # Project documentation
+├── powerbi/             # PowerBI files
+├── screenshots/         # Images for documentation
+├── README.md
+└── .gitignore
 ```
 
 ## Status
 
-🚧 Project currently under development.
+``` 
+Under Development 
+
+```
