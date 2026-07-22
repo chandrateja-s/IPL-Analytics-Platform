@@ -59,7 +59,7 @@ The database is organized into multiple schemas to separate different stages of 
 
 ### SQL Server Version
 
-- Microsoft SQL Server 2022
+- Microsoft SQL Server 2019
 - SQL Server Management Studio 2022(SSMS)
 
 ### Database Verification
