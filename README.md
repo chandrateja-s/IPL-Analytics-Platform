@@ -37,6 +37,37 @@ IPL Analytics Platform
 └── .gitignore
 ```
 
+## Database Setup
+
+### Database
+The project uses Microsoft SQL Server 2022 as the primary relational database.
+
+**Database Name**
+```
+IPL_Analytics_DB
+```
+
+### Schemas
+
+The database is organized into multiple schemas to separate different stages of data processing.
+
+| Schema | Purpose |
+|---------|---------|
+| staging | Stores raw imported data before cleaning |
+| analytics | Stores cleaned and transformed tables for reporting |
+| reference | Stores lookup and reference tables |
+
+### SQL Server Version
+
+- Microsoft SQL Server 2022
+- SQL Server Management Studio 2022(SSMS)
+
+### Database Verification
+
+The database connection was successfully tested using SSMS.
+
+Future database objects (tables, views, stored procedures, and functions) will be created inside these schemas.
+
 ## Status
 
 ``` 
