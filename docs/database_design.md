@@ -181,3 +181,17 @@ The following foreign keys define relationships between the entities.
 - A Match contains many Deliveries.
 - A Player can participate in many Deliveries in different roles.
 - The `Fielders` attribute remains denormalized in Version 1 and may be refactored into a bridge table in a future version.
+
+## Relationship Cardinality
+
+The following table documents the cardinality of each relationship in the database.
+
+| Parent Entity | Child Entity | Relationship | Cardinality |
+|---------------|--------------|--------------|-------------|
+| Seasons | Matches | One Season contains many Matches | 1 : Many |
+| Venues | Matches | One Venue hosts many Matches | 1 : Many |
+| Teams | Matches | One Team participates in many Matches | 1 : Many |
+| Players | Matches | One Player can receive multiple Player of the Match awards | 1 : Many |
+| Matches | Deliveries | One Match contains many Deliveries | 1 : Many |
+| Players | Deliveries | One Player can appear in many Deliveries | 1 : Many |
+| Teams | Deliveries | One Team can be reviewed in many Deliveries | 1 : Many |
