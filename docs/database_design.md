@@ -149,3 +149,35 @@ The following primary keys uniquely identify each entity within the database.
 | Matches | MatchID | Natural | Existing unique match identifier provided by the source dataset. |
 | Deliveries | DeliveryID | Surrogate | Generated integer key because no single unique delivery identifier exists in the source dataset. |
 
+## Foreign Keys
+
+The following foreign keys define relationships between the entities.
+
+| Child Table | Foreign Key | Parent Table | Referenced Column |
+|--------------|-------------|--------------|-------------------|
+| Matches | SeasonID | Seasons | SeasonID |
+| Matches | VenueID | Venues | VenueID |
+| Matches | Team1ID | Teams | TeamID |
+| Matches | Team2ID | Teams | TeamID |
+| Matches | TossWinnerID | Teams | TeamID |
+| Matches | WinnerTeamID | Teams | TeamID |
+| Matches | SuperOverWinnerID | Teams | TeamID |
+| Matches | PlayerOfMatchID | Players | PlayerID |
+| Deliveries | MatchID | Matches | MatchID |
+| Deliveries | BatterID | Players | PlayerID |
+| Deliveries | BowlerID | Players | PlayerID |
+| Deliveries | NonStrikerID | Players | PlayerID |
+| Deliveries | PlayerOutID | Players | PlayerID |
+| Deliveries | ReviewBatterID | Players | PlayerID |
+| Deliveries | NewBatterID | Players | PlayerID |
+| Deliveries | NextBatterID | Players | PlayerID |
+| Deliveries | TeamReviewedID | Teams | TeamID |
+
+### Design Notes
+
+- A Season can contain many Matches.
+- A Venue can host many Matches.
+- A Team can participate in many Matches.
+- A Match contains many Deliveries.
+- A Player can participate in many Deliveries in different roles.
+- The `Fielders` attribute remains denormalized in Version 1 and may be refactored into a bridge table in a future version.
