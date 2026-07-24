@@ -124,3 +124,78 @@ The project will be considered successful when it:
 - Answers the defined business questions accurately.
 - Provides interactive Power BI dashboards.
 - Demonstrates real-world data analytics and business intelligence practices.
+
+---
+
+# 7. Key Performance Indicators (KPIs)
+
+The following KPIs will be used to evaluate player, team, match, and venue performance.
+
+---
+
+## Team KPIs
+
+| KPI | Description |
+|------|-------------|
+| Matches Played | Total matches played by a team. |
+| Matches Won | Total matches won. |
+| Win Percentage | Percentage of matches won. |
+| Average Team Score | Average runs scored per innings. |
+| Highest Team Score | Highest innings total. |
+| Lowest Defended Score | Lowest successfully defended total. |
+| Highest Successful Chase | Highest target successfully chased. |
+
+---
+
+## Batting KPIs
+
+| KPI | Description |
+|------|-------------|
+| Runs Scored | Total career runs. |
+| Balls Faced | Total balls faced. |
+| Batting Average | Runs scored per dismissal. |
+| Strike Rate | Runs scored per 100 balls. |
+| Fours | Total boundaries (4s). |
+| Sixes | Total boundaries (6s). |
+| Highest Score | Highest individual score. |
+
+---
+
+## Bowling KPIs
+
+| KPI | Description |
+|------|-------------|
+| Wickets | Total wickets taken. |
+| Overs Bowled | Total overs bowled. |
+| Runs Conceded | Total runs conceded. |
+| Economy Rate | Runs conceded per over. |
+| Bowling Average | Runs conceded per wicket. |
+
+---
+
+## Match KPIs
+
+| KPI | Description |
+|------|-------------|
+| Toss Win Percentage | Percentage of tosses won. |
+| Chase Success Rate | Percentage of successful run chases. |
+| Defend Success Rate | Percentage of Successful denfended matches. |
+| Super Over Matches | Total matches decided by Super Over. |
+
+---
+
+## Venue KPIs
+
+| KPI | Description |
+|------|-------------|
+| Matches Hosted | Total matches hosted. |
+| Average First Innings Score | Average first innings total. |
+| Average Second Innings Score | Average second innings total. |
+| Bat First Win Percentage | Win percentage when batting first. |
+| Chase Win Percentage | Win percentage when chasing. |
+
+---
+
+## KPI Usage
+
+These KPIs will be calculated using SQL queries and presented through interactive Power BI dashboards to answer the business questions defined in this document.
