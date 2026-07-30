@@ -133,3 +133,45 @@ The source dataset was analyzed to identify columns containing missing or null v
 
 - Initial inspection reveals that missing values occur in optional event-specific columns such as wickets, reviews.
 - These values are expected does not reflect the quality of data.
+
+## Missing Value Summary
+
+| Column | Missing Values | Approx. % | Expected? | Reason |
+|---------|---------------:|----------:|-----------|--------|
+| power_surge_start | 295,732 | 99.9% | Yes | Power Surge was introduced only in selected tournaments. |
+| umpire | 294,742 | 99.6% | Yes | Third umpire information exists only for DRS reviews. |
+| review_decision | 294,742 | 99.6% | Yes | Populated only when a review occurs. |
+| team_reviewed | 294,742 | 99.6% | Yes | Populated only when a review occurs. |
+| review_batter | 294,742 | 99.6% | Yes | Populated only when a review occurs. |
+| method | 291,601 | 98.5% | Yes | Only used for DLS or other special result methods. |
+| superover_winner | 291,580 | 98.5% | Yes | Populated only for Super Over matches. |
+| result_type | 290,752 | 98.3% | Yes | Only populated for special match results (Tie, No Result, etc.). |
+| fielders | 285,011 | 96.3% | Yes | Only populated when fielders participate in a dismissal. |
+| next_batter | 281,569 | 95.2% | Yes | Populated only after a wicket falls. |
+| new_batter | 281,569 | 95.2% | Yes | Populated only after a wicket falls. |
+| player_out | 281,027 | 95.0% | Yes | Populated only when a dismissal occurs. |
+| wicket_kind | 281,027 | 95.0% | Yes | Only populated for wicket deliveries. |
+| extra_type | 279,505 | 94.5% | Yes | Only populated when an extra is awarded. |
+| runs_target | 153,429 | 51.8% | Yes | Only applicable during the second innings while chasing. |
+| win_outcome | 4,980 | 1.7% | Yes | Missing for tied, abandoned, or no-result matches. |
+---
+
+# 4. Duplicate Record Analysis
+
+Two validation checks were performed on the source dataset.
+
+## Validation Results
+
+| Validation | Result |
+|------------|--------|
+| Exact duplicate rows | 0 |
+| Duplicate records based on (`match_id`, `innings`, `over`, `ball`) | 11,075 |
+
+---
+
+## Findings
+
+- No exact duplicate records were found in the dataset.
+- Multiple records share the same combination of `match_id`, `innings`, `over`, and `ball`.
+
+
