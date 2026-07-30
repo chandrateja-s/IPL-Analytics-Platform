@@ -124,3 +124,12 @@ The following table documents each column in the source dataset along with its e
 - Numeric identifiers such as `match_id` are preserved from the source dataset.
 - Boolean-like fields are mapped to `BIT` where appropriate.
 - Nullable columns reflect fields that are not applicable for every delivery (e.g., wickets, reviews, Super Overs).
+
+---
+
+# 3. Missing and Null Value Analysis
+
+The source dataset was analyzed to identify columns containing missing or null values.
+
+- Initial inspection reveals that missing values occur in optional event-specific columns such as wickets, reviews.
+- These values are expected does not reflect the quality of data.
