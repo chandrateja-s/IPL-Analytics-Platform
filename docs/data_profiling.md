@@ -173,5 +173,18 @@ Two validation checks were performed on the source dataset.
 
 - No exact duplicate records were found in the dataset.
 - Multiple records share the same combination of `match_id`, `innings`, `over`, and `ball`.
+ 
+ ---
 
+ # 5. Profiling Statistics
+
+| Metric | Result |
+|---------|--------|
+| Source File | IPL Ball-by-Ball CSV |
+| Total Columns | 64 |
+| Approximate Rows | 296,000 |
+| Exact Duplicate Rows | 0 |
+| Columns with Missing Values | 15 |
+| Primary Business Entity | Delivery (Ball Event) |
+| Overall Data Quality | High |
 
